@@ -1,0 +1,44 @@
+body{ background-image: url("../pen21.jpg"); 
+background-repeat: no-repeat;
+background-size: cover;}
+.n{}
+.text{ margin-top: 140px; }
+.footer{color: green;}
+.fascolor{ color: green; }
+.start {background-color: #0A6A11 ;
+color:white;
+font-family: "arial";
+border-radius: 30px;
+width: 900px;
+}
+.start{  }
+#btn1{background-color: #F9FAC6; 
+       color : green ;
+}
+.welcom{margin-top: 100px;}
+h6{color: #062D06 ;}
+.qus1{ margin-left: 360px; 
+color: white;}
+#btn2{
+	background-color: green;
+	color: white;
+	padding: 15px;
+}
+#mark1{ color: #0EEE0E ; font-size: 40px; }
+#mark2{  color: red; font-size: 40px; }
+#body2 {
+	background-image: url("../pin10.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;}
+#body3 , #body4, #body5, #body6, #body7, #body8, #body9, #body10 ,#body11{background-image: url("../pin10.jpg"); 
+background-repeat: no-repeat;
+background-size: cover;}
+
+#body12{
+	background-image: url("../pin11.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;}
+
+    .fh2{margin-top: 200px;
+    	font-size: 50px;}
+    	.f{font-size: 90px;}

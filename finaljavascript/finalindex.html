@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>online exam </title>
+	 <meta name="description" content=" if you wont to test your skills in English make this exam">
+  <meta name="keywords" content="online exam ,English exam , English test ">
+  <meta name="author" content="marah shogran">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.11.2-web/css/all.css">
+	<link rel="icon" type="image/fav-icon" href="img/logo.jpg">
+	<meta charset="UTF-8">
+</head>
+</head>
+<body id="body12">
+	
+	<h2 id="h2" class="text-white text-center fh2"></h2>
+	<h2 class="text-white text-center f  ">THANK YOU</h2>
+	
+	<script type="text/javascript">
+        		 var name=localStorage.getItem('name');
+        		  var number=localStorage.getItem('number');
+        		  document.getElementById("h2").innerHTML="NAME : "+name+"<br>"+"ID-NUMBER : "+number;
+        		  
+        	</script>
+        	<h1  class=" text-center" id="mark1"></h1>
+	        <h1   class=" text-center" id="mark2"></h1>
+	<script type="text/javascript">
+		
+ 			
+			var mark=localStorage.getItem('mark');
+		
+			
+			 
+			if( mark>6)
+			{
+				document.getElementById("mark1").innerHTML=" Excelent you are pass : "+mark+" out 10 ";
+			}
+			else if(mark>4 && mark <7)
+			{
+				document.getElementById("mark1").innerHTML=" good you are pass : "+mark+" out 10 ";
+			}
+			else
+			{
+				document.getElementById("mark2").innerHTML=" hard luck you are fail  : "+mark+" out 10 ";
+			}
+     localStorage.removeItem('name');
+     localStorage.removeItem('number');
+     localStorage.removeItem('mark');
+		  
+	</script>
+
+</body>
+</html>

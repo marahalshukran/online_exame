@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>online exam </title>
+	 <meta name="description" content=" if you wont to test your skills in English make this exam">
+  <meta name="keywords" content="online exam ,English exam , English test ">
+  <meta name="author" content="marah shogran">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.11.2-web/css/all.css">
+	<link rel="icon" type="image/fav-icon" href="img/logo.jpg">
+	<meta charset="UTF-8">
+</head>
+<body  id="body5">
+	
+ <div class="container text-center  text-white welcom">
+        	<h1>WELCOME  IN ENGLISH EXAME </h1>
+        	<h2 id="h2"></h2>
+        	<h2 id="h-2"></h2>
+        	<script type="text/javascript">
+        		 var name=localStorage.getItem('name');
+        		  var number=localStorage.getItem('number');
+        		  document.getElementById("h2").innerHTML="NAME : "+name+"<br>"+"ID-NUMBER : "+number;
+        		  
+        	</script>
+</div>
+<br>
+<br><br>
+<div class="container qus1 mt-3">
+	 <div class="col-12 col-md-12">
+	<form name="quizForm" onsubmit="return submitAnswers()">
+		<h5>4-Every Monday they ______________   spaghetti for dinner </h5><br>
+		<input type="radio" name="answer1" value="Above">eat<br>
+		<input type="radio" name="answer1" value="Across">ate<br>
+		<input type="radio" name="answer1" value="against">eaten<br>
+		<br>
+		<input type="Submit" value="Next" id="btn2" >
+	</form>
+</div>
+	<script type="text/javascript">
+		function submitAnswers() {
+ 			var form = document.quizForm;
+			var q1 = form.elements['answer1'].value;
+			var mark=localStorage.getItem('mark');
+			
+			
+			if(q1 == "Across")
+			{
+				mark++;
+			}
+			localStorage.setItem('mark',mark);
+			
+			window.location.href = 'index5.html';
+			return false;
+		  }
+	</script>
+
+</div>
+
+</body>
+</html>

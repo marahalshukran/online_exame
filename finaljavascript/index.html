@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>online exam </title>
+	 <meta name="description" content=" if you wont to test your skills in English make this exam">
+  <meta name="keywords" content="online exam ,English exam , English test ">
+  <meta name="author" content="marah shogran">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.11.2-web/css/all.css">
+	<link rel="icon" type="image/fav-icon" href="img/logo.jpg">
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$("document").ready(function()
+				{
+					
+					 $("#btn1").click(function(){
+					 	var name= $("#name").val();
+                      var number= $("#number").val();
+                     	
+                    	 
+					  localStorage.setItem('name',$("#name").val());
+                      localStorage.setItem('number',$("#number").val());
+                      if(name =="" &&number=="")
+                      	alert("please enter user name and password");
+                      else 
+                     
+                    	window.location.href = 'index1.html';
+                  	
+                        });
+
+                        
+
+		         
+				});
+		    </script>
+</head>
+<body>
+	<div class="text ">
+            <h1 class="text-center mt-3">Test Your English</h1>
+			<h6 class="text-center mb-5 mt-3">We are Cambridge Assessment English.<br> Part of the University of Cambridge, we help millions of people learn<br> English and prove their skills to the worl</h6>
+			</div>
+<div class="container  start ">
+    	
+			<div class="row start2 ">
+				<div class="col-6 col-md-6 mt-5">
+					<p>We have 10 questions time of exam 20  , min 2 min for each <br>questions 2 mark for each question we must login to start exam by entered your Name and ID Number   </p>
+				</div>
+				<div class="col-6 col-md-6 mt-5">
+
+                    <label > Enter Your Name </label>
+					<input type="text " name="" id="name" class="ml-5" required>
+					<br>
+					<label>Enter Your ID Number </label>
+					<input type="number" name="" id="number" class="ml-3 " required>
+		
+
+					<br><br>
+					<button class="mb-5 p-3"id="btn1" >START EXAME </button>
+					
+					
+			</div>
+			
+			    	
+    </div>
+</div>
+
+		<p id="p"></p>
+
+<div class="footer   p-3 mt-5 text-center">
+	<div class="container">
+	<div class="row">
+		<div class="col-6 col-md-6">
+			<h3 class="">SHARE WITH</h3>
+			
+		</div>
+		<div class="col-6 col-md-6">
+			<div class="row">
+				<div class="col-3 col-md-3">
+			    <a href="https://web.whatsapp.com/" target="blank"><i class="fab fa-facebook fa-3x fascolor" ></i></a>
+			
+		</div>
+		
+		<div class="col-3 col-md-3">
+			  <a href="https://twitter.com/login?lang=en" target="blank"><i class="fab fa-instagram fa-3x fascolor"></i>
+			
+		</div>
+		<div class="col-3 col-md-3">
+			  <a href="https://twitter.com/login?lang=en" target="blank"><i class="fab fa-linkedin-in fa-3x fascolor"></i>
+			
+		</div>
+
+			</div>
+		
+		
+	</div>
+</div>
+		<p class="text-white text-center mt-5">Copyright © Your Website 2020</p>
+	</div>
+	</div>
+	
+</body>
+</html>
